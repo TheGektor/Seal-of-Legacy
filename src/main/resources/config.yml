@@ -1,0 +1,30 @@
+# Seal-of-Legacy Configuration
+# Author: Antag0nis1
+# Version: 1.0.0
+
+messages:
+  prefix: "<gradient:gold:yellow>[SealOfLegacy]</gradient> <dark_gray>» <gray>"
+  sealed-success: "<green>Предмет успешно запечатан! <yellow>ID: <id>"
+  unsealed-success: "<green>Печать снята с предмета."
+  already-sealed: "<red>Этот предмет уже запечатан!"
+  not-sealed: "<red>Этот предмет не запечатан."
+  no-item: "<red>У вас нет предмета в руке."
+  no-permission: "<red>У вас нет прав для этого действия."
+  not-owner: "<red>Вы не владелец этого предмета! Владелец: <yellow><owner>"
+  reload-success: "<green>Конфигурация перезагружена."
+  item-info:
+    header: "<gradient:blue:aqua>=== Информация о Печати ===</gradient>"
+    id: "<gray>ID: <yellow><id>"
+    owner: "<gray>Владелец: <yellow><owner>"
+    date: "<gray>Дата: <yellow><date>"
+    footer: "<gradient:blue:aqua>=========================</gradient>"
+
+settings:
+  # Формат строки в Lore, которая будет добавлена
+  lore-line: "<gradient:red:dark_red>🔒 ЗАПЕЧАТАНО</gradient>"
+  
+  # Звуки (используйте имена звуков из Minecraft)
+  sounds:
+    seal: "BLOCK_ANVIL_USE"
+    unseal: "BLOCK_GRINDSTONE_USE"
+    error: "BLOCK_NOTE_BLOCK_BASS"

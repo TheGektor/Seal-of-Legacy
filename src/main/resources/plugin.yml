@@ -1,0 +1,51 @@
+name: Seal-of-Legacy
+version: '${version}'
+main: com.antagonis1.sealoflegacy.SealOfLegacy
+api-version: '1.21'
+authors: [Antag0nis1]
+description: A plugin to seal items and prevent copying.
+
+permissions:
+  itemlock.use:
+    description: Allows sealing items.
+    default: op
+  itemlock.unlock:
+    description: Allows unlocking own items.
+    default: op
+  itemlock.check:
+    description: Allows checking item seal status.
+    default: true
+  itemlock.info:
+    description: Allows viewing item seal info.
+    default: true
+  itemlock.admin:
+    description: Admin permissions for bypassing and managing all locks.
+    default: op
+  itemlock.bypass:
+    description: Bypass all lock protections.
+    default: op
+  itemlock.exempt:
+    description: Prevent others from locking your items (conceptually).
+    default: false
+
+commands:
+  lockitem:
+    description: Seals the item in hand.
+    usage: /<command> [force|list|purge]
+    permission: itemlock.use
+  unlockitem:
+    description: Unseals the item in hand.
+    usage: /<command>
+    permission: itemlock.unlock
+  lockcheck:
+    description: Checks if the item in hand is sealed.
+    usage: /<command>
+    permission: itemlock.check
+  lockinfo:
+    description: Displays detailed info about the seal.
+    usage: /<command>
+    permission: itemlock.info
+  lockreload:
+    description: Reloads the plugin configuration.
+    usage: /<command>
+    permission: itemlock.admin
