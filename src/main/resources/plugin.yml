@@ -4,6 +4,7 @@ main: com.antagonis1.sealoflegacy.SealOfLegacy
 api-version: '1.21'
 authors: [Antag0nis1]
 description: A plugin to seal items and prevent copying.
+softdepend: [LuckPerms]
 
 permissions:
   itemlock.use:
